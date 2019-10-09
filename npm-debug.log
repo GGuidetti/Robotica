@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   '--unsafe-perm',
+1 verbose cli   'node-red' ]
+2 info using npm@1.4.21
+3 info using node@v8.11.1
+4 verbose cache add [ 'node-red', null ]
+5 verbose cache add name=undefined spec="node-red" args=["node-red",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'node-red',
+6 verbose parsed url   path: 'node-red',
+6 verbose parsed url   href: 'node-red' }
+7 silly lockFile 9b8a2839-node-red node-red
+8 verbose lock node-red /home/pi/.npm/9b8a2839-node-red.lock
+9 silly lockFile 9b8a2839-node-red node-red
+10 silly lockFile 9b8a2839-node-red node-red
+11 verbose addNamed [ 'node-red', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 47160d77-node-red node-red@
+14 verbose lock node-red@ /home/pi/.npm/47160d77-node-red.lock
+15 silly addNameRange { name: 'node-red', range: '*', hasData: false }
+16 verbose request where is /node-red
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 283eec1e3909cb51
+19 verbose url raw /node-red
+20 verbose url resolving [ 'https://registry.npmjs.org/', './node-red' ]
+21 verbose url resolved https://registry.npmjs.org/node-red
+22 verbose request where is https://registry.npmjs.org/node-red
+23 info trying registry request attempt 1 at 19:10:21
+24 http GET https://registry.npmjs.org/node-red
+25 error TypeError: Request path contains unescaped characters
+25 error     at new ClientRequest (_http_client.js:127:13)
+25 error     at TunnelingAgent.request (http.js:38:10)
+25 error     at TunnelingAgent.createSocket (/usr/lib/nodejs/tunnel-agent/index.js:117:25)
+25 error     at TunnelingAgent.createSecureSocket [as createSocket] (/usr/lib/nodejs/tunnel-agent/index.js:184:41)
+25 error     at TunnelingAgent.addRequest (/usr/lib/nodejs/tunnel-agent/index.js:80:8)
+25 error     at new ClientRequest (_http_client.js:258:16)
+25 error     at Object.request (http.js:38:10)
+25 error     at Object.request (https.js:239:15)
+25 error     at Request.start (/usr/lib/nodejs/request/index.js:607:30)
+25 error     at Request.end (/usr/lib/nodejs/request/index.js:1235:28)
+26 error If you need help, you may report this *entire* log,
+26 error including the npm and node versions, at:
+26 error     <http://github.com/npm/npm/issues>
+27 error System Linux 4.14.34-v7+
+28 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "--unsafe-perm" "node-red"
+29 error cwd /home/pi
+30 error node -v v8.11.1
+31 error npm -v 1.4.21
+32 verbose exit [ 1, true ]
